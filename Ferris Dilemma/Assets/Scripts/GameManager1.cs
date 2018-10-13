@@ -45,7 +45,7 @@ public class GameManager1 : MonoBehaviour {
                     return;
                 }
             }
-            if(guests < 5)
+            if(guests < 7)
             {
                 SceneManager.LoadScene("FerrisWheel2");
             } else
@@ -54,4 +54,9 @@ public class GameManager1 : MonoBehaviour {
             }
         }
 	}
+
+    public void reloadLevel()
+    {
+        SceneManager.LoadScene("FerrisWheel2");
+    }
 }
