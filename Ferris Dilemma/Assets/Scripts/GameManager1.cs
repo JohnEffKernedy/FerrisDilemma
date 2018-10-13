@@ -10,6 +10,8 @@ public class GameManager1 : MonoBehaviour {
     public Text badGuyText;
     public Text winText;
     private GameObject[] carts;
+    public GameObject Skybox;
+    public float skyspeed = 3f;
 
     public Transform[] badGuys;
     int guests = 0;
@@ -21,6 +23,9 @@ public class GameManager1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        Skybox.transform.Translate(new Vector3(skyspeed * Time.deltaTime, 0, 0));
+
         guests = 0;
         badGuysCount = 0;
 		for(int i = 0; i < carts.Length; i++)

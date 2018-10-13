@@ -25,11 +25,6 @@ public class GameManager : MonoBehaviour {
         guests = 0;
         badGuys = 0;
 
-        Vector3 pos = Camera.main.WorldToViewportPoint(Skybox.transform.position);
-        if (1.0 < pos.x)
-        {
-            Skybox = Instantiate(Skybox);
-        }
         Skybox.transform.Translate(new Vector3(skyspeed*Time.deltaTime, 0, 0));
        
 
