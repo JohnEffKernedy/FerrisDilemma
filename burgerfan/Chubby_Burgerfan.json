@@ -1,0 +1,104 @@
+{ "frames": {
+   "Chubby_Burgerfan 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 20, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 3, "w": 20, "h": 28 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 1.aseprite": {
+    "frame": { "x": 20, "y": 0, "w": 20, "h": 29 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 2, "w": 20, "h": 29 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 2.aseprite": {
+    "frame": { "x": 40, "y": 0, "w": 20, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 3, "w": 20, "h": 28 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 3.aseprite": {
+    "frame": { "x": 60, "y": 0, "w": 20, "h": 29 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 2, "w": 20, "h": 29 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 4.aseprite": {
+    "frame": { "x": 80, "y": 0, "w": 20, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 3, "w": 20, "h": 28 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 5.aseprite": {
+    "frame": { "x": 100, "y": 0, "w": 20, "h": 29 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 2, "w": 20, "h": 29 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 6.aseprite": {
+    "frame": { "x": 120, "y": 0, "w": 20, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 3, "w": 20, "h": 28 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 7.aseprite": {
+    "frame": { "x": 140, "y": 0, "w": 20, "h": 29 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 2, "w": 20, "h": 29 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 8.aseprite": {
+    "frame": { "x": 160, "y": 0, "w": 20, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 6, "y": 3, "w": 20, "h": 28 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 9.aseprite": {
+    "frame": { "x": 180, "y": 0, "w": 18, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 3, "w": 18, "h": 28 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   },
+   "Chubby_Burgerfan 10.aseprite": {
+    "frame": { "x": 198, "y": 0, "w": 18, "h": 28 },
+    "rotated": false,
+    "trimmed": true,
+    "spriteSourceSize": { "x": 7, "y": 3, "w": 18, "h": 28 },
+    "sourceSize": { "w": 32, "h": 32 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "http://www.aseprite.org/",
+  "version": "1.2.8",
+  "image": "C:\\Users\\Razer\\Desktop\\Aseprite\\Chubby_Burgerfan.png",
+  "format": "RGBA8888",
+  "size": { "w": 352, "h": 32 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Walk", "from": 0, "to": 7, "direction": "forward" },
+   { "name": "Stand", "from": 8, "to": 8, "direction": "forward" },
+   { "name": "Eat", "from": 9, "to": 10, "direction": "forward" }
+  ]
+ }
+}
