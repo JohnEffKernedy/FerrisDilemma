@@ -32,7 +32,13 @@ public class GameManager : MonoBehaviour {
 
         if(badGuy.position.y < -150 && badGuys == 0)
         { 
-            SceneManager.LoadScene("FerrisWheel2");
+            if (guests < 4)
+            {
+                SceneManager.LoadScene("FerrisWheel1");
+            } else
+            {
+                SceneManager.LoadScene("FerrisWheel2");
+            }
         }
 	}
 }

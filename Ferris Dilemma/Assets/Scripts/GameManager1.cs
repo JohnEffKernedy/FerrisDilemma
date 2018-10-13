@@ -40,7 +40,13 @@ public class GameManager1 : MonoBehaviour {
                     return;
                 }
             }
-            winText.text = "You did it!";
+            if(guests < 5)
+            {
+                SceneManager.LoadScene("FerrisWheel2");
+            } else
+            {
+                winText.text = "You did it!";
+            }
         }
 	}
 }
