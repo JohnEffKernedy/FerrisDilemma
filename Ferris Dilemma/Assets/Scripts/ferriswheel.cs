@@ -15,12 +15,27 @@ public class ferriswheel : MonoBehaviour {
 	void Update () {
 		if(Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(Vector3.forward, -rotationSpeed);
+            transform.Rotate(Vector3.forward, rotationSpeed);
         }
 
         if(Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(Vector3.forward, rotationSpeed);
+            transform.Rotate(Vector3.forward, -rotationSpeed);
         }
-	}
+
+        if (Input.touchCount > 0)
+        {
+            var touch = Input.GetTouch(0);
+            if (touch.position.x < Screen.width / 2)
+            {
+                transform.Rotate(Vector3.forward, rotationSpeed);
+            }
+            else if (touch.position.x > Screen.width / 2)
+            {
+                transform.Rotate(Vector3.forward, -rotationSpeed);
+            }
+        }
+
+        
+    }
 }
