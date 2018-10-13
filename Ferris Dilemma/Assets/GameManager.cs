@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour {
         if(badGuy.position.y < -150)
         {
             Debug.Log("Load");
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("FerrisWheel");
         }
 	}
 }
