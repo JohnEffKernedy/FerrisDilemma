@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Tutorial.unity
     guid: 0e268682da402334f97792f32485f9d6
   - enabled: 1
-    path: Assets/Scenes/FerrisWheel.unity
+    path: Assets/Scenes/FerrisWheel1.unity
+    guid: 69bc5f0eb2d035641834266b2b742a4f
+  - enabled: 1
+    path: Assets/Scenes/FerrisWheel2.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

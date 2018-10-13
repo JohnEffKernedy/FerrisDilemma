@@ -14,7 +14,7 @@ public class MenuManager : MonoBehaviour {
 	void Update () {
 		if(Input.touchCount > 0 || Input.anyKeyDown)
         {
-            SceneManager.LoadScene("FerrisWheel");
+            SceneManager.LoadScene("FerrisWheel1");
         }
 	}
 }
