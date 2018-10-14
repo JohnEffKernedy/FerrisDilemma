@@ -8,13 +8,21 @@ public class GameManager : MonoBehaviour {
 
     public Text scoreText;
     public Text badGuyText;
+    public Text winText;
+    public Text loadText;
+
+    public string loadTextString;
+    public string winTextString;
     private GameObject[] carts;
     public GameObject Skybox;
     public float skyspeed = 3f;
+    public Transform[] badGuys;
 
-    public Transform badGuy;
+    public string nextLevel;
+    public int guestsToSave;
+
     int guests = 0;
-    int badGuys = 0;
+    int badGuysCount = 0;
 	// Use this for initialization
 	void Start () {
         carts = GameObject.FindGameObjectsWithTag("Cart");
@@ -23,7 +31,7 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         guests = 0;
-        badGuys = 0;
+        badGuysCount = 0;
 
         Skybox.transform.Translate(new Vector3(skyspeed*Time.deltaTime, 0, 0));
        
@@ -31,25 +39,46 @@ public class GameManager : MonoBehaviour {
 		for(int i = 0; i < carts.Length; i++)
         {
             guests += carts[i].GetComponent<WheelCart>().counter;
-            badGuys += carts[i].GetComponent<WheelCart>().badGuys;
+            badGuysCount += carts[i].GetComponent<WheelCart>().badGuys;
         }
         scoreText.text = "Guests Left: " + guests;
-        badGuyText.text = "Bad Guys Left: " + badGuys;
+        badGuyText.text = "Bad Guys Left: " + badGuysCount;
 
-        if(badGuy.position.y < -150 && badGuys == 0)
-        { 
-            if (guests < 4)
+        if (badGuysCount == 0)
+        {
+            for (int i = 0; i < badGuys.Length; i++)
             {
-                SceneManager.LoadScene("FerrisWheel1");
-            } else
+                if (!(badGuys[i].position.y < -150))
+                {
+                    return;
+                }
+            }
+            if (guests < guestsToSave)
             {
-                SceneManager.LoadScene("FerrisWheel2");
+                reloadLevel();
+            }
+            else
+            {
+                winText.text = winTextString;
+                loadText.text = loadTextString;
+                Invoke("LoadNextLevel", 3f);
             }
         }
-	}
+    }
+
+    public void LoadNextLevel()
+    {
+        if(nextLevel != "")
+        {
+            SceneManager.LoadScene(nextLevel);
+        } else
+        {
+            SceneManager.LoadScene("Tutorial");
+        }     
+    }
 
     public void reloadLevel()
     {
-        SceneManager.LoadScene("FerrisWheel1");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

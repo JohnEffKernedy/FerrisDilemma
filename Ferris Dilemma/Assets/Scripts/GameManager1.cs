@@ -51,9 +51,15 @@ public class GameManager1 : MonoBehaviour {
             } else
             {
                 winText.text = "You did it!";
+                Invoke("LoadNextLevel", 3f);
             }
         }
 	}
+
+    public void LoadNextLevel()
+    {
+
+    }
 
     public void reloadLevel()
     {
