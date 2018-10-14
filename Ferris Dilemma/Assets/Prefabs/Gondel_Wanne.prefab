@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 233415109320865014}
   - component: {fileID: 114885194556707240}
   - component: {fileID: 61386816635394106}
+  - component: {fileID: 82905992717354656}
   m_Layer: 0
   m_Name: Gondel_Wanne
   m_TagString: Cart
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1200007269969474}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.34, y: -2.36, z: 0}
+  m_LocalPosition: {x: 6.96, y: -8.31, z: 0}
   m_LocalScale: {x: 0.4878049, y: 0.6443902, z: 0.4878049}
   m_Children:
   - {fileID: 4463245085963404}
@@ -159,6 +160,101 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.305344, y: 1.6299953}
   m_EdgeRadius: 0
+--- !u!82 &82905992717354656
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1200007269969474}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: a88ce1e2bac79bb4face277b7c5ead93, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.388
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &114885194556707240
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -172,6 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   counter: 0
   badGuys: 0
+  PunchSound: {fileID: 82905992717354656}
 --- !u!212 &212238026441215838
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -207,7 +304,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: c41632f61ea85914ea78bbeb6b0e177b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1fb6559a952dec840b7e26833c37763c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -253,7 +350,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 54c2739b005ee9d4facaf07998d12452, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 37e2dbafa80f2f04e981fa3aa556669a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -278,7 +375,7 @@ HingeJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: -0.08905268, y: 1.6920156}
-  m_ConnectedAnchor: {x: -9.38344, y: -1.2696816}
+  m_ConnectedAnchor: {x: 6.9165597, y: -7.219682}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
