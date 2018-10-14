@@ -58,7 +58,7 @@ public class GameManager1 : MonoBehaviour {
 
     public void LoadNextLevel()
     {
-
+        //SceneManager.LoadScene(nextLevel);
     }
 
     public void reloadLevel()
