@@ -6,6 +6,7 @@ public class MusicSingleton : MonoBehaviour {
 
     public static MusicSingleton instance = null;
     public AudioSource music_loop;
+    public float Volume = 1f;
 
     private void Awake()
     {
@@ -30,4 +31,10 @@ public class MusicSingleton : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void setVolume(float vol)
+    {
+        Volume = vol;
+        music_loop.volume = Volume;
+    }
 }

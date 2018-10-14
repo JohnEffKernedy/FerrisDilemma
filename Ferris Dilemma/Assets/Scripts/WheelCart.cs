@@ -9,10 +9,11 @@ public class WheelCart : MonoBehaviour {
     public AudioSource PunchSound;
 
     private float originalPitch;
-	// Use this for initialization
-	void Start () {
 
-	}
+    // Use this for initialization
+    void Start() {
+        PunchSound.volume = FindObjectOfType<MusicSingleton>().Volume * 0.38f; ;
+    }
 	
 	// Update is called once per frame
 	void Update () {

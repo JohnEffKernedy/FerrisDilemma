@@ -5,6 +5,7 @@ using UnityEngine;
 public class ferriswheel : MonoBehaviour {
 
     public float rotationSpeed = 2;
+    public bool menuMode = false;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,12 @@ public class ferriswheel : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(menuMode)
+        {
+            transform.Rotate(Vector3.forward, 0.1f);
+            return;
+        }
+
 		if(Input.GetKey(KeyCode.LeftArrow))
         {
             transform.Rotate(Vector3.forward, rotationSpeed);

@@ -1633,7 +1633,7 @@ Prefab:
     - target: {fileID: 114601059069513026, guid: 120a1f0ec2254264a9557f7a474f875e,
         type: 2}
       propertyPath: m_Text
-      value: "Level 3/3: \nSave at least 7 guests!"
+      value: "Level 3/3: \nSave at least 10 guests!"
       objectReference: {fileID: 0}
     - target: {fileID: 114601059069513026, guid: 120a1f0ec2254264a9557f7a474f875e,
         type: 2}
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   - {fileID: 832272371}
   - {fileID: 996910697}
   nextLevel: 
-  guestsToSave: 7
+  guestsToSave: 10
 --- !u!4 &1069027442
 Transform:
   m_ObjectHideFlags: 0
@@ -2749,6 +2749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 0.3
+  menuMode: 0
 --- !u!50 &1199599591
 Rigidbody2D:
   serializedVersion: 4
